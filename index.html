@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD</h1>
+        <form id="createForm">
+            <h2>Create Record</h2>
+            <label>Title: <input type="text" id="createTitle" required></label>
+            <label>First Name: <input type="text" id="createFirstName" required></label>
+            <label>Last Name: <input type="text" id="createLastName" required></label>
+            <label>Address: <input type="text" id="createAddress" required></label>
+            <label>National ID: <input type="text" id="createNationalID" required></label>
+            <label>Gender: <input type="text" id="createGender" required></label>
+            <label>Date of Birth: <input type="date" id="createDateOfBirth" required></label>
+            <label>Size: <input type="text" id="createSize" required></label>
+            <label>Grade: <input type="text" id="createGrade" required></label>
+            <label>Parent Customer ID: <input type="text" id="createParentCustomerID"></label>
+            <button type="button" onclick="createRecord()">Create</button>
+        </form>
+
+        <form id="updateForm">
+            <h2>Update Record</h2>
+            <label>Customer ID: <input type="text" id="updateCustomerID" required></label>
+            <label>Title: <input type="text" id="updateTitle" required></label>
+            <label>First Name: <input type="text" id="updateFirstName" required></label>
+            <label>Last Name: <input type="text" id="updateLastName" required></label>
+            <label>Address: <input type="text" id="updateAddress" required></label>
+            <label>National ID: <input type="text" id="updateNationalID" required></label>
+            <label>Gender: <input type="text" id="updateGender" required></label>
+            <label>Date of Birth: <input type="date" id="updateDateOfBirth" required></label>
+            <label>Size: <input type="text" id="updateSize" required></label>
+            <label>Grade: <input type="text" id="updateGrade" required></label>
+            <label>Parent Customer ID: <input type="text" id="updateParentCustomerID"></label>
+            <button type="button" onclick="updateRecord()">Update</button>
+        </form>
+
+        <form id="deleteForm">
+            <h2>Delete Record</h2>
+            <label>Customer ID: <input type="text" id="deleteCustomerID" required></label>
+            <button type="button" onclick="deleteRecord()">Delete</button>
+        </form>
+
+        <h2>All Records</h2>
+        <table id="recordsTable">
+            <thead>
+                <tr>
+                    <th>CustomerID</th>
+                    <th>Title</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>National ID</th>
+                    <th>Gender</th>
+                    <th>Date of Birth</th>
+                    <th>Size</th>
+                    <th>Grade</th>
+                    <th>Parent Customer ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <ul id="customers-list"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
